@@ -1,12 +1,9 @@
-def count_users(group):
-  count = 0
-  for member in get_members(group):
-    count += 1
-    if is_group(member):
-      count += count_users(member)
-  return count
+num1 = 0
+num2 = 0
 
+for x in range(5):
+    num1 = x
+    for y in range(14):
+        num2 = y + 3
 
-print(count_users("sales")) # Should be 3
-print(count_users("engineering")) # Should be 8
-print(count_users("everyone")) # Should be 18
+print(num1 + num2)
